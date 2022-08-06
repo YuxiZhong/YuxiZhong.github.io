@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>哈密顿图模型 | 钟羽曦</title><meta name="keywords" content="学习"><meta name="author" content="Zhong Yuxi"><meta name="copyright" content="Zhong Yuxi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="哈密顿图模型1. 模型概览1.1 学科分属基本学科归属： 图论 需要背景知识： 哈密顿回路，动态规划，0-1整数规划，最小生成树 1.2 历史发展1.2.1 哈密顿图的定义^1G&#x3D;(V,E)是一个图，若G中一条通路通过每一个顶点一次且仅一次，称这条通路为哈密顿通路。若G中一个圈通过每一个顶点一次且仅一次，称这个圈为哈密顿圈。若一个图存在哈密尔顿圈，就称为哈密顿图。 判断哈密顿路径是NP完">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>哈密顿图模型 | 钟羽曦</title><meta name="keywords" content="学习"><meta name="author" content="Zhong Yuxi"><meta name="copyright" content="Zhong Yuxi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="哈密顿图模型1. 模型概览1.1 学科分属基本学科归属： 图论 需要背景知识： 哈密顿回路，动态规划，0-1整数规划，最小生成树 1.2 历史发展1.2.1 哈密顿图的定义1G&#x3D;(V,E)是一个图，若G中一条通路通过每一个顶点一次且仅一次，称这条通路为哈密顿通路。若G中一个圈通过每一个顶点一次且仅一次，称这个圈为哈密顿圈。若一个图存在哈密尔顿圈，就称为哈密顿图。 判断哈密顿路径是NP完全问题，还没">
 <meta property="og:type" content="article">
 <meta property="og:title" content="哈密顿图模型">
 <meta property="og:url" content="http://yuxii.top/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="钟羽曦">
-<meta property="og:description" content="哈密顿图模型1. 模型概览1.1 学科分属基本学科归属： 图论 需要背景知识： 哈密顿回路，动态规划，0-1整数规划，最小生成树 1.2 历史发展1.2.1 哈密顿图的定义^1G&#x3D;(V,E)是一个图，若G中一条通路通过每一个顶点一次且仅一次，称这条通路为哈密顿通路。若G中一个圈通过每一个顶点一次且仅一次，称这个圈为哈密顿圈。若一个图存在哈密尔顿圈，就称为哈密顿图。 判断哈密顿路径是NP完">
+<meta property="og:description" content="哈密顿图模型1. 模型概览1.1 学科分属基本学科归属： 图论 需要背景知识： 哈密顿回路，动态规划，0-1整数规划，最小生成树 1.2 历史发展1.2.1 哈密顿图的定义1G&#x3D;(V,E)是一个图，若G中一条通路通过每一个顶点一次且仅一次，称这条通路为哈密顿通路。若G中一个圈通过每一个顶点一次且仅一次，称这个圈为哈密顿圈。若一个图存在哈密尔顿圈，就称为哈密顿图。 判断哈密顿路径是NP完全问题，还没">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 <meta property="article:published_time" content="2022-08-05T04:16:59.000Z">
-<meta property="article:modified_time" content="2022-08-05T18:19:56.982Z">
+<meta property="article:modified_time" content="2022-08-06T08:44:33.689Z">
 <meta property="article:author" content="Zhong Yuxi">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-08-06 02:19:56'
+  postUpdate: '2022-08-06 16:44:33'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -142,11 +142,15 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">钟羽曦</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">哈密顿图模型</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-05T04:16:59.000Z" title="发表于 2022-08-05 12:16:59">2022-08-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-05T18:19:56.982Z" title="更新于 2022-08-06 02:19:56">2022-08-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="哈密顿图模型"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="哈密顿图模型"><a href="#哈密顿图模型" class="headerlink" title="哈密顿图模型"></a>哈密顿图模型</h1><h2 id="1-模型概览"><a href="#1-模型概览" class="headerlink" title="1. 模型概览"></a>1. 模型概览</h2><h3 id="1-1-学科分属"><a href="#1-1-学科分属" class="headerlink" title="1.1 学科分属"></a>1.1 学科分属</h3><p><strong>基本学科归属：</strong> 图论</p>
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">钟羽曦</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">哈密顿图模型</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-05T04:16:59.000Z" title="发表于 2022-08-05 12:16:59">2022-08-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-06T08:44:33.689Z" title="更新于 2022-08-06 16:44:33">2022-08-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="哈密顿图模型"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="哈密顿图模型"><a href="#哈密顿图模型" class="headerlink" title="哈密顿图模型"></a>哈密顿图模型</h1><h2 id="1-模型概览"><a href="#1-模型概览" class="headerlink" title="1. 模型概览"></a>1. 模型概览</h2><h3 id="1-1-学科分属"><a href="#1-1-学科分属" class="headerlink" title="1.1 学科分属"></a>1.1 学科分属</h3><p><strong>基本学科归属：</strong> 图论</p>
 <p><strong>需要背景知识：</strong> 哈密顿回路，动态规划，0-1整数规划，最小生成树</p>
-<h3 id="1-2-历史发展"><a href="#1-2-历史发展" class="headerlink" title="1.2 历史发展"></a>1.2 历史发展</h3><h4 id="1-2-1-哈密顿图的定义-1"><a href="#1-2-1-哈密顿图的定义-1" class="headerlink" title="1.2.1 哈密顿图的定义^1"></a>1.2.1 哈密顿图的定义<a href="%5B%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91.%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%5D(https://baike.baidu.com/item/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE/2587317)">^1</a></h4><p>G&#x3D;(V,E)是一个图，若G中一条通路通过每一个顶点一次且仅一次，称这条通路为哈密顿通路。若G中一个圈通过每一个顶点一次且仅一次，称这个圈为哈密顿圈。若一个图存在哈密尔顿圈，就称为哈密顿图。</p>
+<h3 id="1-2-历史发展"><a href="#1-2-历史发展" class="headerlink" title="1.2 历史发展"></a>1.2 历史发展</h3><h4 id="1-2-1-哈密顿图的定义1"><a href="#1-2-1-哈密顿图的定义1" class="headerlink" title="1.2.1 哈密顿图的定义1"></a>1.2.1 哈密顿图的定义<sup><a href="#fn_1" id="reffn_1">1</a></sup></h4><p>G=(V,E)是一个图，若G中一条通路通过每一个顶点一次且仅一次，称这条通路为哈密顿通路。若G中一个圈通过每一个顶点一次且仅一次，称这个圈为哈密顿圈。若一个图存在哈密尔顿圈，就称为哈密顿图。</p>
 <p>判断哈密顿路径是NP完全问题，还没有有效的判断算法。</p>
-<h4 id="1-2-2-研究历史-2"><a href="#1-2-2-研究历史-2" class="headerlink" title="1.2.2 研究历史^2"></a>1.2.2 研究历史<a href="%E7%8E%8B%E6%B5%B7%E7%87%95%EF%BC%8C%E7%8E%8B%E6%B5%A9%EF%BC%8C%E5%B2%B3%E7%A7%80%E6%98%8E.%E6%B5%85%E8%B0%88%E6%AC%A7%E6%8B%89%E5%9B%BE%E3%80%81%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E8%B5%B7%E6%BA%90%E4%B8%8E%E5%BA%94%E7%94%A8.%5BZ%5D.%E5%B1%B1%E4%B8%9C%E5%8D%8F%E5%92%8C%E5%AD%A6%E9%99%A2.2019.">^2</a></h4><p>哈密尔顿（Hamilton）是爱尔兰的一位数学家和天文学家。他的一生是多姿多彩的，自从哈密尔顿发现“四元数”之后，他又发现了另外一种他命名为“The Icosian Calculus”的代数系统，这系统有加法和乘法的运算子（operators），可是乘法不满足交换律（Commutative law 即 xy&#x3D;yx 这个规律）。</p>
+<h4 id="1-2-2-研究历史2"><a href="#1-2-2-研究历史2" class="headerlink" title="1.2.2 研究历史2"></a>1.2.2 研究历史<sup><a href="#fn_2" id="reffn_2">2</a></sup></h4><p>哈密尔顿（Hamilton）是爱尔兰的一位数学家和天文学家。他的一生是多姿多彩的，自从哈密尔顿发现“四元数”之后，他又发现了另外一种他命名为“The Icosian Calculus”的代数系统，这系统有加法和乘法的运算子（operators），可是乘法不满足交换律（Commutative law 即 xy=yx 这个规律）。</p>
 <p>他发现这代数系统是和正则12面体（regularicosion polybedron）是有关系的。于是，哈密尔顿于1859年提出了所谓的“周游世界游戏”，即用一个正十二面体的20个顶点表示全世界的20个大城市（图1.1（a）），一个人要从某一个城市出发，经过每个城市恰好一次，然后回到出发点，问这样的旅行路线是否存在?这个游戏曾风靡一时。运用拓扑的思想，将这个正十二面体“拉平”就会得到一个与它同构的平面图（图1.1（b））。这样，这个游戏就转化为：要求沿着正十二面体的棱，怎样跑遍正则多面体上的所有顶点，而最后又能回到起点的问题。</p>
 <p align="center">
 <img src="https://pic3.zhimg.com/v2-0684c0b12e720144d657a52cfe01ec4a_r.jpg"
@@ -175,13 +179,13 @@ width = "60%"/>
 <p>一般地，寻找一个图的哈密顿圈问题是NP困难的。因此通常都是用穷举搜索的方法来判定一个图是否含有哈密顿路或圈。后来鲁宾（F.Rubin）利用推演的方法给出了一个好一点的搜索步骤来找出图里的一些或者全部的哈密顿路或圈，安格鲁因（D.Angluin）和瓦利安特（L.G.Valiant）设计的概率算法对哈密顿路或圈的寻找也是非常有用的。寻找哈密顿路的确定算法虽然很难有多项式时间的，但是这并不意味着只能进行时间复杂度为O(n!*n)暴力搜索。利用状态压缩动态规划，我们可以将时间复杂度降低到O(n²*n³)，具体算法是建立方程f[i][S][j]，表示经过了i个节点，节点都是集合S的，到达节点j时的最短路径。每次我们都按照点j所连的节点进行转移。</p>
 <h2 id="2-模型介绍"><a href="#2-模型介绍" class="headerlink" title="2. 模型介绍"></a>2. 模型介绍</h2><h3 id="2-1-具体模型介绍"><a href="#2-1-具体模型介绍" class="headerlink" title="2.1  具体模型介绍"></a>2.1  具体模型介绍</h3><h4 id="2-1-1-哈密顿图的判别条件总结"><a href="#2-1-1-哈密顿图的判别条件总结" class="headerlink" title="2.1.1 哈密顿图的判别条件总结"></a>2.1.1 哈密顿图的判别条件总结</h4><ol>
 <li><p>充分条件：</p>
-<p> （1）<strong>狄拉克定理：</strong> 如果图G是一个具有n(n≥3)个顶点的简单图，并且图G中每个顶点的度数至少为n&#x2F;2，那么图G是哈密顿图。</p>
+<p> （1）<strong>狄拉克定理：</strong> 如果图G是一个具有n(n≥3)个顶点的简单图，并且图G中每个顶点的度数至少为n/2，那么图G是哈密顿图。</p>
 <p> （2） <strong>奥勒定理：</strong> 设G是n(n≥3)阶无向简单图，如果G中任何一对不相邻的顶点度数之和都大于等于n，则G是哈密顿图。</p>
 <p> （4）在n(n≥2)阶有向图D中，如果所有有向边均用无向边代替，所得无向图中含生成子图Kn，则有向图中存在哈密顿图。</p>
 </li>
 <li><p>必要条件</p>
 <p> （1） 如果一个图的顶点可以用两种颜色染色，使相邻的顶点的颜色不同，那若结果染完两种颜色的顶点数量不一致，则一定不是哈密顿图。</p>
-<p> （2） 设无向图G&#x3D;(V,E)是哈密顿图， V<sub>1</sub> 是V的任意的非空子集，则 p(G-V1)≤|V1| 。其中，p(G-V1)为从G中删除V1(删除V1中各顶点及关联的边)后所得的图的连通分支数。</p>
+<p> （2） 设无向图G=(V,E)是哈密顿图， V<sub>1</sub> 是V的任意的非空子集，则 p(G-V1)≤|V1| 。其中，p(G-V1)为从G中删除V1(删除V1中各顶点及关联的边)后所得的图的连通分支数。</p>
 </li>
 </ol>
 <h4 id="2-1-2-哈密顿图的性质"><a href="#2-1-2-哈密顿图的性质" class="headerlink" title="2.1.2 哈密顿图的性质"></a>2.1.2 哈密顿图的性质</h4><ol>
@@ -190,7 +194,7 @@ width = "60%"/>
 </li>
 <li><p>哈密尔顿回路的长度等于顶点的个数。</p>
 </li>
-<li><p>如果G&#x3D;&lt;V,E&gt;是一个哈密尔顿图，L是G中一条哈密尔顿回路，那么对G中任何一个顶点u而言，L上都有且只有两条边与顶点u相关联。当deg(u)&#x3D;2时，与顶点u相关联的两条边都必在L上。当deg(v)&gt;2时，与顶点u相关联的边中只能有两条边在L上。</p>
+<li><p>如果G=<V,E>是一个哈密尔顿图，L是G中一条哈密尔顿回路，那么对G中任何一个顶点u而言，L上都有且只有两条边与顶点u相关联。当deg(u)=2时，与顶点u相关联的两条边都必在L上。当deg(v)&gt;2时，与顶点u相关联的边中只能有两条边在L上。</p>
 </li>
 <li><p>哈密顿图一定无割点</p>
 </li>
@@ -198,8 +202,6 @@ width = "60%"/>
 <h4 id="2-1-3-寻找哈密顿回路的若干技巧"><a href="#2-1-3-寻找哈密顿回路的若干技巧" class="headerlink" title="2.1.3 寻找哈密顿回路的若干技巧"></a>2.1.3 寻找哈密顿回路的若干技巧</h4><ol>
 <li><p>遇到度数为2的结点时，与该结点关联的两条边肯定是保留边</p>
 <p> 如在图2.1的G<sub>1</sub>中，结点a，d，e，g为2度结点，由此可确定G<sub>11</sub>中7条保留边，用虚线表示，可以看出这7条保留边组成了哈密顿回路。</p>
-</li>
-</ol>
 <p align="center">
 <img src="https://s2.loli.net/2022/08/06/TfcqHjw7aP5KtM6.png"
 width = "60%"/>
@@ -207,11 +209,11 @@ width = "60%"/>
 <p align="center">
 图2.1：利用2度结点寻找哈密顿回路
 </p>
-
-<ol start="2">
-<li>巧用对称性，避免子回路<br> 子回路指的是由部分结点（非全部结点）组成的回路，在哈密尔顿回路中，子回路至少有一条边需要被去除，在去除某些边时，可根据图形的对称性，考虑其中一种情况即可。</li>
+</li>
+<li><p>巧用对称性，避免子回路<br> 子回路指的是由部分结点（非全部结点）组成的回路，在哈密尔顿回路中，子回路至少有一条边需要被去除，在去除某些边时，可根据图形的对称性，考虑其中一种情况即可。</p>
+</li>
 </ol>
-<h3 id="2-2-模型变种"><a href="#2-2-模型变种" class="headerlink" title="2.2 模型变种"></a>2.2 模型变种</h3><h2 id="3-模型应用"><a href="#3-模型应用" class="headerlink" title="3. 模型应用"></a>3. 模型应用</h2><h3 id="3-1-常见应用场景-1"><a href="#3-1-常见应用场景-1" class="headerlink" title="3.1 常见应用场景^1"></a>3.1 常见应用场景<a href="%5B%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91.%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%5D(https://baike.baidu.com/item/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE/2587317)">^1</a></h3><h4 id="3-1-1-：旅行商问题"><a href="#3-1-1-：旅行商问题" class="headerlink" title="3.1.1 ：旅行商问题"></a>3.1.1 ：旅行商问题</h4><p>旅行商问题(Travelling salesman problem, 简称<em>TSP</em>)的定义为：给定一系列城市和每对城市之间的距离，求解访问每一座城市一次并回到起始城市的最短回路，即最短哈密顿回路。</p>
+<h3 id="2-2-模型变种"><a href="#2-2-模型变种" class="headerlink" title="2.2 模型变种"></a>2.2 模型变种</h3><h2 id="3-模型应用"><a href="#3-模型应用" class="headerlink" title="3. 模型应用"></a>3. 模型应用</h2><h3 id="3-1-常见应用场景1"><a href="#3-1-常见应用场景1" class="headerlink" title="3.1 常见应用场景1"></a>3.1 常见应用场景<sup><a href="#fn_1" id="reffn_1">1</a></sup></h3><h4 id="3-1-1-：旅行商问题"><a href="#3-1-1-：旅行商问题" class="headerlink" title="3.1.1 ：旅行商问题"></a>3.1.1 ：旅行商问题</h4><p>旅行商问题(Travelling salesman problem, 简称<em>TSP</em>)的定义为：给定一系列城市和每对城市之间的距离，求解访问每一座城市一次并回到起始城市的最短回路，即最短哈密顿回路。</p>
 <p>实际问题中有很多问题都可以归结为旅行货郎问题。如：物资运输路线的设计；汽车应走怎样的路线使空车路线最短；工厂里在钢板上一些地方需要挖去小圆孔，自动焊割机割咀应该走怎样的路线，使空走的路线最短；城市里在一些地方铺设管道时，管道应该走怎样的路线，才能使管道的耗费最少等。</p>
 <h4 id="3-1-2-其他领域"><a href="#3-1-2-其他领域" class="headerlink" title="3.1.2 其他领域"></a>3.1.2 其他领域</h4><p>由哈密顿图模型引出的旅行商问题有电缆和光缆布线、晶体结构分析、数据串聚类等多种用途。更重要的是．它提供了一个研究组合优化问题的理想平台。很多组合优化问题，比如背包问题、分配问题、车间调度问题都和TSP同属NP完全问题，它们都是同等难度的．如果其中一个能用多项式确定性算法解决，那么其他所有的NP完全问题也能用多项式算法解决。很多方法本来是从TSP发展起来的．后来推广到其他NP完全问题上去。</p>
 <h3 id="3-2-数学建模竞赛应用"><a href="#3-2-数学建模竞赛应用" class="headerlink" title="3.2 数学建模竞赛应用"></a>3.2 数学建模竞赛应用</h3><p><strong>CUMCM 1998B 最佳灾情巡视路线</strong></p>
@@ -228,16 +230,16 @@ width = "60%"/>
 </p>
 
 <p>问题一：若分三组（路）巡视，试设计总路程最短且各组尽可能均衡的路线。</p>
-<p>问题二：假定巡视人员在各乡（镇）停留时间$T&#x3D;2小时$,在各村停留时间$t&#x3D;1小时$,汽车行驶速度$V&#x3D;35公里&#x2F;小时$。要在24小时内完成巡视，至少应分几组；给出这种分组下最佳的巡视路线。</p>
+<p>问题二：假定巡视人员在各乡（镇）停留时间$T=2小时$,在各村停留时间$t=1小时$,汽车行驶速度$V=35公里/小时$。要在24小时内完成巡视，至少应分几组；给出这种分组下最佳的巡视路线。</p>
 <h4 id="3-2-2-目标分析与模型转化"><a href="#3-2-2-目标分析与模型转化" class="headerlink" title="3.2.2 目标分析与模型转化"></a>3.2.2 目标分析与模型转化</h4><p>将公路网图中，每个乡（镇）或村看作图中的一个结点，各乡（镇）、村之间的公路看作图中对应结点的边，各条公路的长度（或行驶时间）看作对应边上的权，所给公路网就转化为加权网络图，问题就转化为在给定的加权网络图中寻找从定点$O$出发，行遍所有顶点至少一次再回到$O$点，使得总权（路程或时间）最小，我们的目标可以转化为找到使得总行程最短的旅行路径，与TSP问题的目标一致。</p>
 <p>问题一是多个旅行商的最佳推销回路问题，即在加权图$G$中求顶点集$V$的划分$V_{1},V_{2},…,V_{n}$，将$G$分成$n$个生成子图$G\left [ V_{1} \right ],G\left [ V_{2} \right ],…,G\left [ V_{n} \right ]$，使得</p>
 <ol>
-<li>顶点$O \in V_{i} , i&#x3D;1,2,3,…,n $</li>
-<li>$\bigcup_{i&#x3D;1}^{n} V_{i}&#x3D;V(G)$</li>
-<li>$\frac{\operatorname{Max}<em>{i,j}\left|\omega\left(C</em>{i}\right)-\omega\left(C_{j}\right)\right|}{\operatorname{Max}<em>{i} \omega\left(C</em>{i}\right)} \leq \alpha$ ，其中$C_{i}$为$V_{i}$的导出子图G\left [V_{i} \right ]$中的最佳销售员回路，\omega \left(C_{i}\right)$为$C_{i}$的权，$i,j&#x3D;1,2,3,…,n$</li>
-<li>$\sum_{i&#x3D;1}^{n} \omega\left(C_{i}\right)&#x3D;\operatorname{Min}$</li>
+<li>顶点$O \in V_{i} , i=1,2,3,…,n $</li>
+<li>$\bigcup_{i=1}^{n} V_{i}=V(G)$</li>
+<li>$\frac{\operatorname{Max}_{i,j}\left|\omega\left(C_{i}\right)-\omega\left(C_{j}\right)\right|}{\operatorname{Max}_{i} \omega\left(C_{i}\right)} \leq \alpha$ ，其中$C_{i}$为$V_{i}$的导出子图G\left [V_{i} \right ]$中的最佳销售员回路，\omega \left(C_{i}\right)$为$C_{i}$的权，$i,j=1,2,3,…,n$</li>
+<li>$\sum_{i=1}^{n} \omega\left(C_{i}\right)=\operatorname{Min}$</li>
 </ol>
-<p>定义：称$\alpha _ {0}&#x3D;\frac{\operatorname{Max}<em>{i,j}\left|\omega\left(C</em>{i}\right)-\omega\left(C_{j}\right)\right|}{\operatorname{Max}<em>{i} \omega\left(C</em>{i}\right)}$为该分组的实际均衡度，$\alpha$为最大容许均衡度。</p>
+<p>定义：称$\alpha _ {0}=\frac{\operatorname{Max}_{i,j}\left|\omega\left(C_{i}\right)-\omega\left(C_{j}\right)\right|}{\operatorname{Max}_{i} \omega\left(C_{i}\right)}$为该分组的实际均衡度，$\alpha$为最大容许均衡度。</p>
 <h4 id="3-2-3-问题的求解"><a href="#3-2-3-问题的求解" class="headerlink" title="3.2.3 问题的求解$"></a>3.2.3 问题的求解$</h4><p>问题一的求解可分为以下步骤</p>
 <p><strong>CUMCM 2013B 碎纸片的拼接复原</strong><br><em>以下仅讨论问题一</em></p>
 <h4 id="3-2-1-问题复述-1"><a href="#3-2-1-问题复述-1" class="headerlink" title="3.2.1 问题复述"></a>3.2.1 问题复述</h4><blockquote>
@@ -246,62 +248,30 @@ width = "60%"/>
 <p>对于给定的来自同一页印刷文字文件的碎纸机破碎纸片（仅纵切），建立碎纸片拼接复原模型和算法，并针对附件1、附件2给出的中、英文各一页文件的碎片数据进行拼接复原。如果复原过程需要人工干预，请写出干预方式及干预的时间节点。复原结果以表格形式表达。</p>
 <h4 id="3-2-2-目标分析与模型转化-1"><a href="#3-2-2-目标分析与模型转化-1" class="headerlink" title="3.2.2 目标分析与模型转化"></a>3.2.2 目标分析与模型转化</h4><p><strong>目标分析</strong><br>我们的目标是根据碎纸片间的匹配程度（这一匹配程度主要是由纸片边缘相似度决定的），找出使得所有碎纸片总的匹配程度最高的碎纸片排列方式。</p>
 <p><strong>模型转化</strong><br>如果我们定义碎纸片间的“距离”为与碎纸片间的匹配程度反相关的量（两个碎纸片间匹配度越大，它们的距离越小），那么使得所有碎纸片两两间匹配程度的总和最高的碎纸片排列方式也就是使得相邻碎纸片的距离之和最小的碎纸片排列方式。<br>将每张碎纸片看成TSP问题中推销员经过的城市，碎纸片之间的“距离”看成城市间的距离，我们的目标可以转化为找到使得总行程最短的旅行路径，与TSP问题的目标一致。</p>
-<h4 id="3-2-3-问题的求解-2"><a href="#3-2-3-问题的求解-2" class="headerlink" title="3.2.3 问题的求解^2"></a>3.2.3 问题的求解<a href="%E7%8E%8B%E6%B5%B7%E7%87%95%EF%BC%8C%E7%8E%8B%E6%B5%A9%EF%BC%8C%E5%B2%B3%E7%A7%80%E6%98%8E.%E6%B5%85%E8%B0%88%E6%AC%A7%E6%8B%89%E5%9B%BE%E3%80%81%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E8%B5%B7%E6%BA%90%E4%B8%8E%E5%BA%94%E7%94%A8.%5BZ%5D.%E5%B1%B1%E4%B8%9C%E5%8D%8F%E5%92%8C%E5%AD%A6%E9%99%A2.2019.">^2</a></h4><p>问题的求解过程可以分为以下步骤：</p>
+<h4 id="3-2-3-问题的求解2"><a href="#3-2-3-问题的求解2" class="headerlink" title="3.2.3 问题的求解2"></a>3.2.3 问题的求解<sup><a href="#fn_2" id="reffn_2">2</a></sup></h4><p>问题的求解过程可以分为以下步骤：</p>
 <pre><code>1. 将附近中给出的碎纸片图片进行数字化处理
 2. 提取图片数据特征
 3. 定义碎纸片匹配度函数及距离函数
 4. 求解各碎纸片间的距离
 5. 将碎纸片的距离作为参数投入TSP问题求解模型中，解得碎纸片的排序结果
-</code></pre>
-<h4 id="3-2-3-1-图片数字化"><a href="#3-2-3-1-图片数字化" class="headerlink" title="3.2.3.1 图片数字化"></a>3.2.3.1 图片数字化</h4><p>对每张碎纸片图片进行以下<strong>二值化</strong> 处理：将每个像素点数字化为0或1。若像素点颜色为黑，则其值取0；若像素点颜色为白，则其值取1</p>
+</code></pre><h4 id="3-2-3-1-图片数字化"><a href="#3-2-3-1-图片数字化" class="headerlink" title="3.2.3.1 图片数字化"></a>3.2.3.1 图片数字化</h4><p>对每张碎纸片图片进行以下<strong>二值化</strong> 处理：将每个像素点数字化为0或1。若像素点颜色为黑，则其值取0；若像素点颜色为白，则其值取1</p>
 <h4 id="3-2-3-2-提取图片数据特征"><a href="#3-2-3-2-提取图片数据特征" class="headerlink" title="3.2.3.2 提取图片数据特征"></a>3.2.3.2 提取图片数据特征</h4><p>对已二值化处理的图片做以下特征提取：</p>
 <ol>
-<li><p><strong>建立edge矩阵提取图片边缘信息：</strong> $edge[i,j]$为$19*2$的矩阵，储存每一条碎片的边缘像素点信息。其中$i$表示碎片的编号，$j&#x3D;0$表示左侧边缘像素点信息，$j&#x3D;1$表示右侧边缘像素点信息。例如，$edge[5,0]$储存$004$号碎片左侧边缘像素点信息。</p>
-</li>
-<li><p><strong>建立count矩阵提取图片边缘信息：</strong> 根据 $edge[i,j]$矩阵，我们可以计算得到一个 $19*2$ 的 $count[i,j]$矩阵，该矩阵储存每一条碎片边缘取值为 $0$ 的像素点的数量。例如，$count[0,0]&#x3D;350$ 表示 $001$号碎片左侧边缘共有 $350$ 个黑色像素点。</p>
-</li>
-<li><p><strong>位于最左端的纸片编号确定：</strong> 根据 count 矩阵，若 edge[i,0]&#x3D;0，那么我们就认为该碎片在原始文件中处于最左端。</p>
-</li>
-<li><p><strong>碎片行特征的提取：</strong> 由于原始文件文字行特征明显，因此我们需要提取碎片的行特征（其具体的原因见匹配度的定义）。首先确定碎片顶端取值为 $0$ 的像素点的位置，以此作水平线为上边界，依次向下取 $w$ 为行宽（这里取 $w&#x3D;40 pixels$ 以保证能容纳每一个文字）直至下边缘，得到每条碎片的行数为$n_1, n_2,…, n_{19}$；然后取$n&#x3D;\max (n_1, n_2,…,n_{19})$作为最终确定的行数，并以该条碎片的行化方式为标准对每一条碎片进行行化；最终每一条碎片被划分为 $28$ 行。每条碎纸片行特征大致列表如下：</p>
-<table>
-<thead>
-<tr>
-<th align="center">k</th>
-<th align="center">1</th>
-<th align="center">2</th>
-<th align="center">3</th>
-<th align="center">…</th>
-<th align="center">27</th>
-<th align="center">28</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">$n_{kl}$</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">$n_{kr}$</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
+<li><strong>建立edge矩阵提取图片边缘信息：</strong> $edge[i,j]$为$19*2$的矩阵，储存每一条碎片的边缘像素点信息。其中$i$表示碎片的编号，$j=0$表示左侧边缘像素点信息，$j=1$表示右侧边缘像素点信息。例如，$edge[5,0]$储存$004$号碎片左侧边缘像素点信息。</li>
+<li><strong>建立count矩阵提取图片边缘信息：</strong> 根据 $edge[i,j]$矩阵，我们可以计算得到一个 $19*2$ 的 $count[i,j]$矩阵，该矩阵储存每一条碎片边缘取值为 $0$ 的像素点的数量。例如，$count[0,0]=350$ 表示 $001$号碎片左侧边缘共有 $350$ 个黑色像素点。</li>
+<li><strong>位于最左端的纸片编号确定：</strong> 根据 count 矩阵，若 edge[i,0]=0，那么我们就认为该碎片在原始文件中处于最左端。</li>
+<li><p><strong>碎片行特征的提取：</strong> 由于原始文件文字行特征明显，因此我们需要提取碎片的行特征（其具体的原因见匹配度的定义）。首先确定碎片顶端取值为 $0$ 的像素点的位置，以此作水平线为上边界，依次向下取 $w$ 为行宽（这里取 $w=40 pixels$ 以保证能容纳每一个文字）直至下边缘，得到每条碎片的行数为$n_1, n_2,…, n_{19}$；然后取$n=\max (n_1, n_2,…,n_{19})$作为最终确定的行数，并以该条碎片的行化方式为标准对每一条碎片进行行化；最终每一条碎片被划分为 $28$ 行。每条碎纸片行特征大致列表如下：</p>
+<p>|   k    |   1   |   2   |   3   |  …  |  27   |  28   |<br>| :——: | :—-: | :—-: | :—-: | :—-: | :—-: | :—-: |<br>| $n_{kl}$ |<br>| $n_{kr}$ |<br>表1：一条碎纸片行特征数据提取表</p>
 </li>
 </ol>
-<p>表1：一条碎纸片行特征数据提取表</p>
 <p>其中，$k$为行号；$n_{kl}$为第$k$行左侧边缘取值为$0$的像素点的数量$n_{kr}$为第$k$行右侧边缘取值为$0$的像素点的数量；$n_{ikl}$为第$i$条碎片第$k$行左侧边缘取值为$0$的像素点的数量。</p>
-<h4 id="3-2-3-3-定义碎纸片匹配度函数及距离函数"><a href="#3-2-3-3-定义碎纸片匹配度函数及距离函数" class="headerlink" title="3.2.3.3 定义碎纸片匹配度函数及距离函数"></a>3.2.3.3 定义碎纸片匹配度函数及距离函数</h4><p>为了衡量两个碎片之间的匹配程度，我们定义匹配度$M_{ij}$作为评价的标准，其计算公式如下：<br>$$<br>m_{ijk} &#x3D; \frac{\min(n_{ikr},n_{jkl})}{\max(n_{ikr},n_{jkl})}$$<br>$$<br>M_{ij} &#x3D;  \sum_{k&#x3D;1}^{n}m_{ijk} $$</p>
-<p>其中，$n$为总的行数（$n &#x3D; 28$）；$m_{ijk}$表示碎片$i$和碎片$j$第$k$行之间的匹配度；$M_{ij}$表示碎片$i$和碎片$j$之间的匹配度。</p>
-<p>碎纸片间的“距离”与匹配度反相关，故定义为：<br>$$<br>L_{ij}&#x3D;30-M_{ij}$$</p>
-<h4 id="3-2-3-4-求解各碎纸片间的距离"><a href="#3-2-3-4-求解各碎纸片间的距离" class="headerlink" title="3.2.3.4 求解各碎纸片间的距离"></a>3.2.3.4 求解各碎纸片间的距离</h4><p>根据以上原则分别对附件1、附件2图片数据做特征提取并计算碎纸片间的两两距离如下图所示，第$i$行$j$列的数表示从第$i$张纸片到第$j$张纸片的距离(MATLAB代码见源代码中“图片数据处理与距离矩阵计算”部分)</p>
+<h4 id="3-2-3-3-定义碎纸片匹配度函数及距离函数"><a href="#3-2-3-3-定义碎纸片匹配度函数及距离函数" class="headerlink" title="3.2.3.3 定义碎纸片匹配度函数及距离函数"></a>3.2.3.3 定义碎纸片匹配度函数及距离函数</h4><p>为了衡量两个碎片之间的匹配程度，我们定义匹配度$M_{ij}$作为评价的标准，其计算公式如下：</p>
+<script type="math/tex; mode=display">
+m_{ijk} = \frac{\min(n_{ikr},n_{jkl})}{\max(n_{ikr},n_{jkl})}</script><script type="math/tex; mode=display">
+M_{ij} =  \sum_{k=1}^{n}m_{ijk}</script><p>其中，$n$为总的行数（$n = 28$）；$m_{ijk}$表示碎片$i$和碎片$j$第$k$行之间的匹配度；$M_{ij}$表示碎片$i$和碎片$j$之间的匹配度。</p>
+<p>碎纸片间的“距离”与匹配度反相关，故定义为：</p>
+<script type="math/tex; mode=display">
+L_{ij}=30-M_{ij}</script><h4 id="3-2-3-4-求解各碎纸片间的距离"><a href="#3-2-3-4-求解各碎纸片间的距离" class="headerlink" title="3.2.3.4 求解各碎纸片间的距离"></a>3.2.3.4 求解各碎纸片间的距离</h4><p>根据以上原则分别对附件1、附件2图片数据做特征提取并计算碎纸片间的两两距离如下图所示，第$i$行$j$列的数表示从第$i$张纸片到第$j$张纸片的距离(MATLAB代码见源代码中“图片数据处理与距离矩阵计算”部分)</p>
 <p align="center">
 <img src={require("./碎纸片距离矩阵1.png").default}
 width = "60%"/>
@@ -310,10 +280,10 @@ width = "60%"/>
 图3.1：附件1中碎纸片距离矩阵
 </p>
 
-<p align="center">
+<p><p align="center">
 <img src={require("./碎纸片距离矩阵2.png").default}
 width = "60%"/>
-</p>
+</p></p>
 <p align="center">
 
 <h2 id="修改记录"><a href="#修改记录" class="headerlink" title="修改记录"></a>修改记录</h2><ul>
@@ -322,4 +292,55 @@ width = "60%"/>
 <li>2021-08-10，郑鸿晓更新模板</li>
 <li>2021-08-04，张嘉乐建立模板</li>
 </ul>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://yuxii.top">Zhong Yuxi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yuxii.top/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/">http://yuxii.top/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yuxii.top" target="_blank">钟羽曦</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">NP问题</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/" title="NP问题"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-05</div><div class="title">NP问题</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Zhong Yuxi</div><div class="author-info__description">A website of Zhongyuxi</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">哈密顿图模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%A7%88"><span class="toc-number">1.1.</span> <span class="toc-text">1. 模型概览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%AD%A6%E7%A7%91%E5%88%86%E5%B1%9E"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 学科分属</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%8E%86%E5%8F%B2%E5%8F%91%E5%B1%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 历史发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1-%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89-1"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1.2.1 哈密顿图的定义^1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2-%E7%A0%94%E7%A9%B6%E5%8E%86%E5%8F%B2-2"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">1.2.2 研究历史^2</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.2.</span> <span class="toc-text">2. 模型介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%85%B7%E4%BD%93%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1  具体模型介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E5%88%A4%E5%88%AB%E6%9D%A1%E4%BB%B6%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">2.1.1 哈密顿图的判别条件总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">2.1.2 哈密顿图的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-3-%E5%AF%BB%E6%89%BE%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%9E%E8%B7%AF%E7%9A%84%E8%8B%A5%E5%B9%B2%E6%8A%80%E5%B7%A7"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">2.1.3 寻找哈密顿回路的若干技巧</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%A8%A1%E5%9E%8B%E5%8F%98%E7%A7%8D"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 模型变种</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">3. 模型应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF-1"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 常见应用场景^1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-%EF%BC%9A%E6%97%85%E8%A1%8C%E5%95%86%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">3.1.1 ：旅行商问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-%E5%85%B6%E4%BB%96%E9%A2%86%E5%9F%9F"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">3.1.2 其他领域</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 数学建模竞赛应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E9%97%AE%E9%A2%98%E5%A4%8D%E8%BF%B0"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">3.2.1 问题复述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E7%9B%AE%E6%A0%87%E5%88%86%E6%9E%90%E4%B8%8E%E6%A8%A1%E5%9E%8B%E8%BD%AC%E5%8C%96"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">3.2.2 目标分析与模型转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-%E9%97%AE%E9%A2%98%E7%9A%84%E6%B1%82%E8%A7%A3"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">3.2.3 问题的求解$</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E9%97%AE%E9%A2%98%E5%A4%8D%E8%BF%B0-1"><span class="toc-number">1.3.2.4.</span> <span class="toc-text">3.2.1 问题复述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E7%9B%AE%E6%A0%87%E5%88%86%E6%9E%90%E4%B8%8E%E6%A8%A1%E5%9E%8B%E8%BD%AC%E5%8C%96-1"><span class="toc-number">1.3.2.5.</span> <span class="toc-text">3.2.2 目标分析与模型转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-%E9%97%AE%E9%A2%98%E7%9A%84%E6%B1%82%E8%A7%A3-2"><span class="toc-number">1.3.2.6.</span> <span class="toc-text">3.2.3 问题的求解^2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-1-%E5%9B%BE%E7%89%87%E6%95%B0%E5%AD%97%E5%8C%96"><span class="toc-number">1.3.2.7.</span> <span class="toc-text">3.2.3.1 图片数字化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-2-%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE%E7%89%B9%E5%BE%81"><span class="toc-number">1.3.2.8.</span> <span class="toc-text">3.2.3.2 提取图片数据特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-3-%E5%AE%9A%E4%B9%89%E7%A2%8E%E7%BA%B8%E7%89%87%E5%8C%B9%E9%85%8D%E5%BA%A6%E5%87%BD%E6%95%B0%E5%8F%8A%E8%B7%9D%E7%A6%BB%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.2.9.</span> <span class="toc-text">3.2.3.3 定义碎纸片匹配度函数及距离函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-4-%E6%B1%82%E8%A7%A3%E5%90%84%E7%A2%8E%E7%BA%B8%E7%89%87%E9%97%B4%E7%9A%84%E8%B7%9D%E7%A6%BB"><span class="toc-number">1.3.2.10.</span> <span class="toc-text">3.2.3.4 求解各碎纸片间的距离</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95"><span class="toc-number">1.4.</span> <span class="toc-text">修改记录</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/" title="哈密顿图模型"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈密顿图模型"/></a><div class="content"><a class="title" href="/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/" title="哈密顿图模型">哈密顿图模型</a><time datetime="2022-08-05T04:16:59.000Z" title="发表于 2022-08-05 12:16:59">2022-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/" title="NP问题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NP问题"/></a><div class="content"><a class="title" href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/" title="NP问题">NP问题</a><time datetime="2022-08-05T03:50:36.000Z" title="发表于 2022-08-05 11:50:36">2022-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/06/%E7%AC%AC%E4%B8%80%EF%BC%81/" title="paper"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="paper"/></a><div class="content"><a class="title" href="/2022/07/06/%E7%AC%AC%E4%B8%80%EF%BC%81/" title="paper">paper</a><time datetime="2022-07-06T15:23:23.000Z" title="发表于 2022-07-06 23:23:23">2022-07-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Zhong Yuxi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+<blockquote id="fn_1">
+<sup>1</sup>. <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE/2587317">百度百科.哈密顿图</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. 王海燕，王浩，岳秀明.浅谈欧拉图、哈密顿图的起源与应用.[Z].山东协和学院.2019.<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://yuxii.top">Zhong Yuxi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yuxii.top/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/">http://yuxii.top/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yuxii.top" target="_blank">钟羽曦</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">NP问题</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/" title="NP问题"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-05</div><div class="title">NP问题</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Zhong Yuxi</div><div class="author-info__description">A website of Zhongyuxi</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">哈密顿图模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%A7%88"><span class="toc-number">1.1.</span> <span class="toc-text">1. 模型概览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%AD%A6%E7%A7%91%E5%88%86%E5%B1%9E"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 学科分属</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%8E%86%E5%8F%B2%E5%8F%91%E5%B1%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 历史发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1-%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%891"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1.2.1 哈密顿图的定义1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2-%E7%A0%94%E7%A9%B6%E5%8E%86%E5%8F%B22"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">1.2.2 研究历史2</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.2.</span> <span class="toc-text">2. 模型介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%85%B7%E4%BD%93%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1  具体模型介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E5%88%A4%E5%88%AB%E6%9D%A1%E4%BB%B6%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">2.1.1 哈密顿图的判别条件总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">2.1.2 哈密顿图的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-3-%E5%AF%BB%E6%89%BE%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%9E%E8%B7%AF%E7%9A%84%E8%8B%A5%E5%B9%B2%E6%8A%80%E5%B7%A7"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">2.1.3 寻找哈密顿回路的若干技巧</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%A8%A1%E5%9E%8B%E5%8F%98%E7%A7%8D"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 模型变种</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">3. 模型应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF1"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 常见应用场景1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-%EF%BC%9A%E6%97%85%E8%A1%8C%E5%95%86%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">3.1.1 ：旅行商问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-%E5%85%B6%E4%BB%96%E9%A2%86%E5%9F%9F"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">3.1.2 其他领域</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 数学建模竞赛应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E9%97%AE%E9%A2%98%E5%A4%8D%E8%BF%B0"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">3.2.1 问题复述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E7%9B%AE%E6%A0%87%E5%88%86%E6%9E%90%E4%B8%8E%E6%A8%A1%E5%9E%8B%E8%BD%AC%E5%8C%96"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">3.2.2 目标分析与模型转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-%E9%97%AE%E9%A2%98%E7%9A%84%E6%B1%82%E8%A7%A3"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">3.2.3 问题的求解$</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E9%97%AE%E9%A2%98%E5%A4%8D%E8%BF%B0-1"><span class="toc-number">1.3.2.4.</span> <span class="toc-text">3.2.1 问题复述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E7%9B%AE%E6%A0%87%E5%88%86%E6%9E%90%E4%B8%8E%E6%A8%A1%E5%9E%8B%E8%BD%AC%E5%8C%96-1"><span class="toc-number">1.3.2.5.</span> <span class="toc-text">3.2.2 目标分析与模型转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-%E9%97%AE%E9%A2%98%E7%9A%84%E6%B1%82%E8%A7%A32"><span class="toc-number">1.3.2.6.</span> <span class="toc-text">3.2.3 问题的求解2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-1-%E5%9B%BE%E7%89%87%E6%95%B0%E5%AD%97%E5%8C%96"><span class="toc-number">1.3.2.7.</span> <span class="toc-text">3.2.3.1 图片数字化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-2-%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE%E7%89%B9%E5%BE%81"><span class="toc-number">1.3.2.8.</span> <span class="toc-text">3.2.3.2 提取图片数据特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-3-%E5%AE%9A%E4%B9%89%E7%A2%8E%E7%BA%B8%E7%89%87%E5%8C%B9%E9%85%8D%E5%BA%A6%E5%87%BD%E6%95%B0%E5%8F%8A%E8%B7%9D%E7%A6%BB%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.2.9.</span> <span class="toc-text">3.2.3.3 定义碎纸片匹配度函数及距离函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-4-%E6%B1%82%E8%A7%A3%E5%90%84%E7%A2%8E%E7%BA%B8%E7%89%87%E9%97%B4%E7%9A%84%E8%B7%9D%E7%A6%BB"><span class="toc-number">1.3.2.10.</span> <span class="toc-text">3.2.3.4 求解各碎纸片间的距离</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95"><span class="toc-number">1.4.</span> <span class="toc-text">修改记录</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/" title="哈密顿图模型"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈密顿图模型"/></a><div class="content"><a class="title" href="/2022/08/05/%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%E6%A8%A1%E5%9E%8B/" title="哈密顿图模型">哈密顿图模型</a><time datetime="2022-08-05T04:16:59.000Z" title="发表于 2022-08-05 12:16:59">2022-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/" title="NP问题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NP问题"/></a><div class="content"><a class="title" href="/2022/08/05/NP%E9%97%AE%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3/" title="NP问题">NP问题</a><time datetime="2022-08-05T03:50:36.000Z" title="发表于 2022-08-05 11:50:36">2022-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/06/%E7%AC%AC%E4%B8%80%EF%BC%81/" title="paper"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="paper"/></a><div class="content"><a class="title" href="/2022/07/06/%E7%AC%AC%E4%B8%80%EF%BC%81/" title="paper">paper</a><time datetime="2022-07-06T15:23:23.000Z" title="发表于 2022-07-06 23:23:23">2022-07-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Zhong Yuxi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
