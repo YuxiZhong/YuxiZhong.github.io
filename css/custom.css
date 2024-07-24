@@ -1,0 +1,52 @@
+/* ����ҳH1-H6ͼ����ʽЧ�� */
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    -webkit-animation: ccc 2.0s linear infinite;
+    animation: ccc 2.0s linear infinite;
+}
+
+@-webkit-keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+#content-inner.layout h1:hover, #content-inner.layout h2:hover, #content-inner.layout h3:hover, #content-inner.layout h4:hover, #content-inner.layout h5:hover, #content-inner.layout h6:hover {
+    color: #fef9d7;
+}
+
+    #content-inner.layout h1:hover::before, #content-inner.layout h2:hover::before, #content-inner.layout h3:hover::before, #content-inner.layout h4:hover::before, #content-inner.layout h5:hover::before, #content-inner.layout h6:hover::before {
+        color: #fef9d7;
+        -webkit-animation: ccc 3.2s linear infinite;
+        animation: ccc 3.2s linear infinite;
+    }
+
+/*��������*/
+#web_bg {
+    background-image: linear-gradient(to top, #fef9d7 0%, #d299c2 100%);
+}
+
+/* ͸���� ���б�����������ҳ��Ƭ������ҳ��ҳ��ҳ�ȣ� */
+#aside_content .card-widget, #recent-posts > .recent-post-item, .layout_page > div:first-child:not(.recent-posts), .layout_post > #page, .layout_post > #post, .read-mode .layout_post > #post {
+    /* ���´�����ɫ͸����Ϊ0.3 */
+    background: rgba(255,255,255,.5);
+}
+
+
