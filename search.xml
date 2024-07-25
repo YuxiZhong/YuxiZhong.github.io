@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/post/0.html"/>
-      <url>/post/0.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="Jane-Street-Blotto-Challenge"><a href="#Jane-Street-Blotto-Challenge" class="headerlink" title="Jane Street: Blotto Challenge!"></a><strong>Jane Street: Blotto Challenge!</strong></h2><p>At Jane Street, our day-to-day work involves figuring out what’s happening in financial markets and building algorithms and systems to do better trades. This often presents us with challenging and interesting problems. However, many of us also enjoy solving puzzles and playing games for their own sake. One game (technically, class of games) we like to play is called Blotto.</p><p>Here are 10 castles, numbered 1, 2, 3, … , 10, and worth 1, 2, 3, … , 10 points respectively. You have 100 soldiers, which you can allocate between the castles however you wish. Your opponent also (independently) does the same. The number of soldiers on each castle is then compared, and for each castle, whoever has the most soldiers on that castle wins its points. Additionally, you lose 0.2 points for each “extra” soldier that you have, in excess of your opponent’s army size, at each castle that you win. You still need to deploy all 100 soldiers. In the case of a tie, no one gets points for that castle.</p><p>See example below:</p><p><img src="https://pic2.zhimg.com/v2-8b6fc69db8c5ab1fb1ff2db22913c379_b.jpg" alt="img"></p><p>In this match, Alice wins castles 2, 4, 6, 9 and takes a 6-point penalty, for a total of 15 points, and Carol wins castles 1, 8, 10 and takes a 6-point penalty, for a total of 13 points (no one wins castles 3, 5, 7).</p><p><strong>We’re going to play a tournament. You get one entry and your final score is the average (mean) of your scores against all the other entries from applicants (plus a few of us, too!)</strong></p><p><strong>What’s your entry? How did you go about coming up with it? An entry should be submitted as a list of 10 non-negative integers, adding up to 100, where the nth element is the number of soldiers being sent to castle n.</strong></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C++STL之哈希表</title>
       <link href="/post/751f48bb.html"/>
       <url>/post/751f48bb.html</url>
@@ -53,7 +40,7 @@
       <link href="/post/cc4d5834.html"/>
       <url>/post/cc4d5834.html</url>
       
-        <content type="html"><![CDATA[<h2 id="这是-Zhong-Yuxi-的一个无趣的网站，很高兴见到你"><a href="#这是-Zhong-Yuxi-的一个无趣的网站，很高兴见到你" class="headerlink" title="这是 Zhong Yuxi 的一个无趣的网站，很高兴见到你"></a>这是 Zhong Yuxi 的一个无趣的网站，很高兴见到你</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>]]></content>
       
       
       
