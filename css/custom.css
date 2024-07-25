@@ -40,7 +40,7 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 
 /*��������*/
 #web_bg {
-    background-image: linear-gradient(to top, #fef9d7 0%, #d299c2 100%);
+    background-color:#ffffff;
 }
 
 /* ͸���� ���б�����������ҳ��Ƭ������ҳ��ҳ��ҳ�ȣ� */
