@@ -6,7 +6,7 @@
   <link href="http://yuxii.top/atom.xml" rel="self"/>
   
   <link href="http://yuxii.top/"/>
-  <updated>2024-08-16T09:47:04.628Z</updated>
+  <updated>2024-08-16T09:48:42.877Z</updated>
   <id>http://yuxii.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习记录 Part 3 | Analyzing Neural Time Series Data</title>
+    <link href="http://yuxii.top/post/c9dcd8k1.html"/>
+    <id>http://yuxii.top/post/c9dcd8k1.html</id>
+    <published>2024-08-16T09:48:01.653Z</published>
+    <updated>2024-08-16T09:48:42.877Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Chapter-10"><a href="#Chapter-10" class="headerlink" title="Chapter 10"></a>Chapter 10</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Chapter-10&quot;&gt;&lt;a href=&quot;#Chapter-10&quot; class=&quot;headerlink&quot; title=&quot;Chapter 10&quot;&gt;&lt;/a&gt;Chapter 10&lt;/h1&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="Analyzing Neural Time Series Data" scheme="http://yuxii.top/tags/Analyzing-Neural-Time-Series-Data/"/>
+    
+  </entry>
   
   <entry>
     <title>Exercises 04 | Analyzing Neural Time Series Data</title>
