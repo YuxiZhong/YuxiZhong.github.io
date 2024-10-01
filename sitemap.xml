@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yuxii.top/categories/index.html</loc>
+    
+    <lastmod>2024-09-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yuxii.top/post/7cfd23b7.html</loc>
     
     <lastmod>2024-09-29</lastmod>
@@ -83,15 +92,6 @@
   </url>
   
   <url>
-    <loc>http://yuxii.top/categories/index.html</loc>
-    
-    <lastmod>2022-07-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yuxii.top/link/index.html</loc>
     
     <lastmod>2022-07-06</lastmod>
@@ -112,7 +112,7 @@
 
   <url>
     <loc>http://yuxii.top/</loc>
-    <lastmod>2024-09-29</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -122,21 +122,21 @@
   
   <url>
     <loc>http://yuxii.top/categories/%E6%95%A3%E8%90%BD%E7%9A%84%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2024-09-29</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yuxii.top/categories/Analyzing-Neural-Time-Series-Data/</loc>
-    <lastmod>2024-09-29</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yuxii.top/categories/%E6%9D%82%E8%AE%B0/</loc>
-    <lastmod>2024-09-29</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
