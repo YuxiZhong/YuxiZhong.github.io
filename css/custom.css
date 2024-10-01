@@ -66,3 +66,14 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 #footer-wrap a {
     color: #49b1f5;
 }
+
+/* ҳ����� */
+@media screen and (min-width: 900px) {
+    html.hide-aside .layout>div:first-child {
+        width: 100%
+    }
+}
+
+.layout {
+    max-width: 1200px
+}
